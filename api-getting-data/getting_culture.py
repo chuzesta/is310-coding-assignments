@@ -4,11 +4,11 @@ import pandas as pd
 import os
 import pyeuropeana.apis as apis
 import pyeuropeana.utils as utils
-apikey.save("EUROPEANA_API_KEY", "dricopholi")
+apikey.save("EUROPEANA_API_KEY", "INSERT_YOUR_API_KEY_HERE")
 europeana_api_key = apikey.load("EUROPEANA_API_KEY")
 os.environ['EUROPEANA_API_KEY'] = europeana_api_key
 import discogs_client
-d = discogs_client.Client('UIUC_IS310_JFANG/0.1', user_token="lPgWGVomPZkTmXKRPLeYGVgNsuVTmSLYmPfAzyLI")
+d = discogs_client.Client('UIUC_IS310_JFANG/0.1', user_token="INSERT DISCOGS USER TOKEN")
 results = d.search('The invention of animals', type='release')
 print(results[1])
 data = {
